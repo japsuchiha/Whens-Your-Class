@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build" : "browserify popup.js -o bundle.js",
+    "watch" : "watchify popup.js -o bundle.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^16.2.2",
     "moment": "^2.22.2",
-    "moment-timezone": "^0.5.21"
+    "moment-timezone": "^0.5.21",
+    "watchify": "^3.11.0"
   }
 }
